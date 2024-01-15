@@ -43,6 +43,8 @@ nav {
     color: #181818;
     font-size: 45px;
     font-weight: 800;
+
+
 }
 
 nav>ul {
@@ -197,11 +199,12 @@ footer {
     width: 50%;
 }
 
-.social-links a{
+.social-links a {
     margin-right: 25px;
 }
 
-.contact input[type="text"], .contact input[type="email"],
+.contact input[type="text"],
+.contact input[type="email"],
 textarea {
     display: block;
     margin-bottom: 25px;
@@ -216,39 +219,73 @@ textarea {
 /* Responsive styles  */
 
 /* mobile devices */
-.hide{
+.hide {
     display: none;
 }
+
 @media screen and (max-width:576px) {
-    .skills-container,footer {
-        
-        flex-direction: column;
+
+    .header {
+        background-image: none;
     }
-    #what-i-do-description{
+
+    #what-i-do-description {
         padding: 0;
     }
-    .resume-container{
+
+    .skills-container,
+    footer,
+    .resume-container,
+    .about-info-container,
+    .banner,
+    nav,
+    nav>ul {
         flex-direction: column;
     }
-    footer{
+
+    footer,
+    .banner {
         padding: 10px;
     }
-    .footer-column{
+
+    .footer-column {
         width: 100%;
     }
-    .contact input[type="text"], .contact input[type="email"],
-textarea{
-    width: 80%;
-}
-   
-}
-@media screen and (min-width:576px) and (max-width:960px) {
-    
-    footer{
-        padding: 30px;
-    }
-    .contact input[type="text"], .contact input[type="email"],
-    textarea{
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea {
         width: 80%;
+    }
+
+    .banner .profile-pic {
+        width: 100%;
+    }
+
+    nav>ul {
+        gap: 10px;
+    }
+
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+
+    footer {
+        padding: 30px;
+
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
+
+    .btn-primary {
+        margin-bottom: 10px;
     }
 }
